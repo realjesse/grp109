@@ -1,5 +1,20 @@
 function playGame(choice) {
+  const computerChoice = getComputerChoice();
+  if (choice ===  computerChoice) {
+    displayTie();
+  }
   
+  else if (
+    (choice === "rock" && computerChoice === "scissors") ||
+    (choice === "paper" && computerChoice === "rock") ||
+    (choice === "scissors" && computerChoice === "paper")
+  ) {
+    displayVictory();
+  }
+  
+  else {
+    displayDefeat();
+  }
 }
 
 function getComputerChoice() {
@@ -21,4 +36,16 @@ function getComputerChoice() {
 function getRandomInt() {
   // Will return a value between 0 and 2
   return Math.floor(Math.random() * 3);
+}
+
+function displayTie() {
+  
+}
+
+function displayVictory() {
+  
+}
+
+function displayDefeat() {
+  
 }
