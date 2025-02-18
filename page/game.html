@@ -8,5 +8,16 @@
 </head>
 <body>
   <h1>Get ready to rock</h1>
+  
+  <label>Choose your fate!</label><br>
+  <select id="choice">
+    <option value="rock">rock</option>
+    <option value="paper">paper</option>
+    <option value="scissors">scissors</option>
+  </select><br>
+
+  <button onclick="playGame(document.getElementById('choice').value;">
+    Play a round!
+  </button>
 </body>
 </html>
