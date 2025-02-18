@@ -1,51 +1,65 @@
-function playGame(choice) {
-  const computerChoice = getComputerChoice();
-  if (choice ===  computerChoice) {
-    displayTie();
-  }
+document.getElementId('reservation_form').addEventListener('submit', function(event) {
   
-  else if (
-    (choice === "rock" && computerChoice === "scissors") ||
-    (choice === "paper" && computerChoice === "rock") ||
-    (choice === "scissors" && computerChoice === "paper")
-  ) {
-    displayVictory();
-  }
+  // initialize form data
+  const first_name = document.getElementById('fname');
+  const last_name = document.getElementById('lname');
+  const email = document.getElementById('phone');
+  const phone_number = document.getElementById('phone');
+  const date_time = document.getElementById('date-time');
+  const num_of_people = document.getElementById('num_of_people');
   
-  else {
-    displayDefeat();
-  }
-}
+  // create a constant which will contain new page html
+  const reservationSuccessfulPage = `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the reservation page of Seattle Sushi, the best sushi in Western Washington!">
+        <title>Reserve - Seattle Sushi</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <script src="../script/script.css" defer></script>
+    </head>
+    <body>
+      <!-- header -->
+        <div class="header">
+            <div class="left-links">
+                <h2>Header Logo</h2>
+            </div>
+            <div class="right-links">
+                <ul>
+                    <li><a href="">header link one</a></li>
+                    <li><a href="">header link two</a></li>
+                    <li><a href="">header link three</a></li>
+                </ul>
+            </div>
+        </div>
 
-function getComputerChoice() {
-  const randomInt = getRandomInt();
-  
-  if (randomInt === 0) {
-    return "rock";
-  }
-  
-  else if (randomInt === 1) {
-    return "paper";
-  }
-  
-  else {
-    return "scissors";
-  }
-}
+      <!-- content -->
+        <div class="content">
+          <h1>Reservation successful!</h1>
+          
+          <p>Thank you ${first_name} for your reservation. We are excited to serve you</p>
+          <ul>
+            <li>Email: ${email}</li>
+            <li>Phone: ${phone_number}</li>
+            <li>Date and time: ${date_time}</li>
+            <li>Number of people: ${num_of_people}</li>
+          </ul>
+          <p>Contact us if you have any questions!</p>
 
-function getRandomInt() {
-  // Will return a value between 0 and 2
-  return Math.floor(Math.random() * 3);
-}
+        </div>
 
-function displayTie() {
+      <!-- footer -->
+        <div class="footer">
+          <p>put links here</p>
+        </div>
+    </body>
+    </html>
+    `;
   
-}
-
-function displayVictory() {
-  
-}
-
-function displayDefeat() {
-  
-}
+    // This will open a new page, with info loaded
+    const newWindow = window.open();
+    newWindow.document.write(reservationSuccessfulPage);
+    newWindow.document.close();
+});
