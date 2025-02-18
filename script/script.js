@@ -1,12 +1,12 @@
-document.getElementId('reservation_form').addEventListener('submit', function(event) {
+document.getElementById('reservation_form').addEventListener('submit', function(event) {
   
   // initialize form data
-  const first_name = document.getElementById('fname');
-  const last_name = document.getElementById('lname');
-  const email = document.getElementById('phone');
-  const phone_number = document.getElementById('phone');
-  const date_time = document.getElementById('date-time');
-  const num_of_people = document.getElementById('num_of_people');
+  const first_name = document.getElementById('fname').value;
+  const last_name = document.getElementById('lname').value;
+  const email = document.getElementById('phone').value;
+  const phone_number = document.getElementById('phone').value;
+  const date_time = document.getElementById('date-time').value;
+  const num_of_people = document.getElementById('num_of_people').value;
   
   // create a constant which will contain new page html
   const reservationSuccessfulPage = `
