@@ -1,1 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.instacart.com/company/wp-content/uploads/2024/01/types-of-sushi-hero.webp'); /* Background image */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+   
+}
+.header {
+    text-align: center;  
+    background-color: ; 
+    padding: 20px; 
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+}
+
+.right-links {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+
+.right-links ul li {
+    display: inline-block;
+}
+.right-links ul li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
 
