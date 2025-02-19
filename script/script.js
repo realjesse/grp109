@@ -62,4 +62,5 @@ document.getElementById('reservation_form').addEventListener('submit', function(
     const newWindow = window.open();
     newWindow.document.write(reservationSuccessfulPage);
     newWindow.document.close();
+    newWindow.document.body.style.zoom = "100%"; // Browser automatically zooms in at 200%
 });
