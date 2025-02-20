@@ -19,6 +19,12 @@ document.getElementById('reservation_form').addEventListener('submit', function(
         <title>Reserved! - Seattle Sushi</title>
         <link rel="stylesheet" href="../style/style.css">
         <script src="../script/script.js" defer></script>
+        <style>
+          body {
+          transform: scale(1);
+          transform-origin: top left;
+          }
+        </style>
     </head>
     <body>
       <!-- header -->
