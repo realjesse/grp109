@@ -15,22 +15,26 @@ document.getElementById('reservation_form').addEventListener('submit', function(
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is the reservation page of Seattle Sushi, the best sushi in Western Washington!">
-        <title>Reserve - Seattle Sushi</title>
-        <link rel="stylesheet" href="../style/style.css">
-        <script src="../script/script.css" defer></script>
+        <meta name="description" content="This is the homepage of Seattle Sushi, the best sushi in Western Washington!">
+        <title>Seattle Sushi</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/script.js" defer></script>
     </head>
     <body>
       <!-- header -->
         <div class="header">
             <div class="left-links">
-                <h2>Header Logo</h2>
+                <h2>Seattle Sushi</h2>
             </div>
             <div class="right-links">
                 <ul>
-                    <li><a href="">header link one</a></li>
-                    <li><a href="">header link two</a></li>
-                    <li><a href="">header link three</a></li>
+                    <li><a href="" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="page/menu.html" rel="noopener noreferrer">Menu</a></li>
+                    <li><a href="page/contact.html" rel="noopener noreferrer">Contact</a></li>
+                    <li><a href="page/reservation.html" rel="noopener noreferrer">Reservation</a></li>
+                    <li><a href="page/changeDocument.html" rel="noopener noreferrer">Iteration</a></li>
+                    <li><a href="project_details/project_details.html" rel="noopener noreferrer">Roles</a></li>
+                    <li><a href="notes/project_setup.html" rel="noopener noreferrer">Details</a></li>
                 </ul>
             </div>
         </div>
@@ -39,20 +43,40 @@ document.getElementById('reservation_form').addEventListener('submit', function(
         <div class="content">
           <h1>Reservation successful!</h1>
           
-          <p>Thank you ${first_name} for your reservation. We are excited to serve you</p>
-          <ul>
-            <li>Email: ${email}</li>
-            <li>Phone: ${phone_number}</li>
-            <li>Date and time: ${date_time}</li>
-            <li>Number of people: ${num_of_people}</li>
-          </ul>
-          <p>Contact us if you have any questions!</p>
-
+              <p>Thank you ${first_name} for your reservation. We are excited to serve you</p>
+              <ul>
+                <li>Email: ${email}</li>
+                <li>Phone: ${phone_number}</li>
+                <li>Date and time: ${date_time}</li>
+                <li>Number of people: ${num_of_people}</li>
+              </ul>
+              <p>Contact us if you have any questions!</p>
         </div>
 
       <!-- footer -->
         <div class="footer">
-          <p>put links here</p>
+          <!-- copyright -->
+          <div>
+            <p>Copyright @ 2025 Seattle Sushi</p>
+          </div>
+      
+          <!-- HTML validator link -->
+          <div>
+            <a href="http://validator.w3.org/check?uri=referer"
+               target="_blank" rel="noopener noreferrer">
+             <img src="http://www.w3.org/Icons/valid-xhtml10" 
+               alt="Valid XHTML 1.0 Strict">
+            </a>
+          </div>
+        
+          <!-- CSS Validator link -->
+          <div>
+             <a href="http://jigsaw.w3.org/css-validator/check/referer" 
+                target="_blank" rel="noopener noreferrer">
+             <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+               alt="Valid CSS!">
+             </a>
+          </div>
         </div>
     </body>
     </html>
