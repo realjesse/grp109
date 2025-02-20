@@ -16,9 +16,9 @@ document.getElementById('reservation_form').addEventListener('submit', function(
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This is the homepage of Seattle Sushi, the best sushi in Western Washington!">
-        <title>Seattle Sushi</title>
-        <link rel="stylesheet" href="style/style.css">
-        <script src="script/script.js" defer></script>
+        <title>Reserved! - Seattle Sushi</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <script src="../script/script.js" defer></script>
     </head>
     <body>
       <!-- header -->
@@ -28,13 +28,13 @@ document.getElementById('reservation_form').addEventListener('submit', function(
             </div>
             <div class="right-links">
                 <ul>
-                    <li><a href="" rel="noopener noreferrer">Home</a></li>
-                    <li><a href="page/menu.html" rel="noopener noreferrer">Menu</a></li>
-                    <li><a href="page/contact.html" rel="noopener noreferrer">Contact</a></li>
-                    <li><a href="page/reservation.html" rel="noopener noreferrer">Reservation</a></li>
-                    <li><a href="page/changeDocument.html" rel="noopener noreferrer">Iteration</a></li>
-                    <li><a href="project_details/project_details.html" rel="noopener noreferrer">Roles</a></li>
-                    <li><a href="notes/project_setup.html" rel="noopener noreferrer">Details</a></li>
+                    <li><a href="../index.html" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="menu.html" rel="noopener noreferrer">Menu</a></li>
+                    <li><a href="contact.html" rel="noopener noreferrer">Contact</a></li>
+                    <li><a href="reservation.html" rel="noopener noreferrer">Reservation</a></li>
+                    <li><a href="changeDocument.html" rel="noopener noreferrer">Iteration</a></li>
+                    <li><a href="../project_details/project_details.html" rel="noopener noreferrer">Roles</a></li>
+                    <li><a href="../notes/project_setup.html" rel="noopener noreferrer">Details</a></li>
                 </ul>
             </div>
         </div>
