@@ -32,14 +32,32 @@
       <h1>Reserve a table!</h1>
       
       <form id="reservation_form">
+        <!-- first name -->
+        <div>
         <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" id="fname" name="fname">
+        </div>
+        
+        <!-- last name -->
+        <div>
         <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
+        <input type="text" id="lname" name="lname">
+        </div>
+        
+        <!-- email -->
+        <div>
         <label for="email">Enter your email</label><br>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email">
+        </div>
+        
+        <!-- phone -->
+        <div>
         <label for="phone">Enter your phone number</label><br>
-        <input type="tel" id="phone" name="phone"><br>
+        <input type="tel" id="phone" name="phone">
+        </div>
+        
+        <!-- num of people -->
+        <div>
         <label for="num_of_people">How many people?</label><br>
         <select name="num_of_people" id="num_of_people">
           <option value="1">1</option>
@@ -48,13 +66,26 @@
           <option value="4">4</option>
           <option value="5">5</option>
           <option value="6+">6+</option>
-        </select><br>
+        </select>
+        </div>
+        
+        <!-- date time -->
+        <div>
         <label for="date-time">Date and time</label><br>
-        <input type="datetime-local" id="date-time" name="date-time"><br>
+        <input type="datetime-local" id="date-time" name="date-time">
+        </div>
+        
+        <!-- comment -->
+        <div>
         <label for="comment">Any additional requests?</label><br>
         <textarea id="comment" name="comment" rows="4" cols="30">
-        </textarea><br><br>
+        </textarea>
+        </div>
+        
+        <!-- submit -->
+        <div>
         <input type="submit" value="submit">
+        </div>
     </div>
 
   <!-- footer -->
