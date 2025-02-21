@@ -79,6 +79,16 @@ body.index-page{
   gap: 15px;
 }
 
+/* change document content */
+#change_document .content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px grey;
+  width: 70%;
+  margin: 0 auto;
+}
+
 /* footer */
 
 .footer {
