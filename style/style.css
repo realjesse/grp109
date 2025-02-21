@@ -7,8 +7,12 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
+    background: url('https://www.tablespoon.com/-/media/GMI/Core-Sites/TBSP/Images/Articles/Content/know-your-sushi/know-your-sushi-group.jpg?sc_lang=en'); 
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    color: black;
+    
 }
 
 /* header */
@@ -16,14 +20,15 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15%;
+    padding: 10px 5%;
     align-items: center;
+  
 }
 
 .header ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .header h2,
