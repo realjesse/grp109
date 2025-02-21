@@ -19,6 +19,7 @@ body {
 
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10px 5%;
     align-items: center;
@@ -39,20 +40,25 @@ body {
 
 .header a {
     text-decoration: none;
+    color:black ;
+    font-weight: bold;
 }
 
 .header h2 {
-    font-size: 24px;
+   font-size: 50px;
+  font-weight: bold;
+  color: blue;
 }
 
 .header a {
-    font-size: 18px;
+    font-size:24px;
 }
 
 /* content */
 
 .content {
     flex: 1;
+  
 }
 
 /* Reservation page content */
@@ -83,4 +89,5 @@ body {
 .footer p {
     margin: 0;
     font-size: 18px;
+  color:white;
 }
