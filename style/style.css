@@ -89,6 +89,17 @@ body.index-page{
   margin: 30px auto;
 }
 
+/* project details content */
+#project_details .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#project_details .content h2 {
+  border-bottom: solid 1px;
+}
+
 /* footer */
 
 .footer {
