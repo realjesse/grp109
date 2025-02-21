@@ -26,7 +26,7 @@ document.getElementById('reservation_form').addEventListener('submit', function(
           }
         </style>
     </head>
-    <body>
+    <body id="reservation_successful">
       <!-- header -->
         <div class="header">
             <div class="left-links">
