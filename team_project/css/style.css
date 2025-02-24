@@ -110,6 +110,14 @@ body.index-page{
   align-items: center;
 }
 
+/* details content */
+#details .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* footer */
 
 .footer {
