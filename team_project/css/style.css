@@ -83,7 +83,7 @@ body.index-page{
 }
 
 /* change document content */
-#change_document .content div {
+#change_document .content .column {
   display: flex;
   flex-direction: column;
   align-items: center;
