@@ -17,8 +17,7 @@ document.getElementById('reservation_form').addEventListener('submit', function(
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This is the homepage of Seattle Sushi, the best sushi in Western Washington!">
         <title>Reserved! - Seattle Sushi</title>
-        <link rel="stylesheet" href="../style/style.css">
-        <script src="../script/script.js" defer></script>
+        <link rel="stylesheet" href="../css/style.css">
         <style>
           body {
           transform: scale(1);
@@ -35,7 +34,6 @@ document.getElementById('reservation_form').addEventListener('submit', function(
             <div class="right-links">
                 <ul>
                     <li><a href="../index.html" rel="noopener noreferrer">Home</a></li>
-                    <li><a href="menu.html" rel="noopener noreferrer">Menu</a></li>
                     <li><a href="contact.html" rel="noopener noreferrer">Contact</a></li>
                     <li><a href="reservation.html" rel="noopener noreferrer">Reservation</a></li>
                     <li><a href="changeDocument.html" rel="noopener noreferrer">Iteration</a></li>
