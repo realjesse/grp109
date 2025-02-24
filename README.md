@@ -1,3 +1,6 @@
 # grp109
 
-Our JavaScript element is based on the reservation page, once you reserve it will create a new window using JavaScript that contains some of your information!
+This is Group One's project for DEV109 at Bellevue College!
+
+To do:
+- in the stylesheet, create a class and assign it to all pages which have flex column on their content
