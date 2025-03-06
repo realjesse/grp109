@@ -84,6 +84,40 @@ body.index-page{
   align-items: center;
   gap: 15px;
 }
+/* Contact page content*/
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#contact_form{
+  background: white;
+  padding: 20px;
+  border: 3px solid blue;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+}
+#contact_form div{
+  margin-bottom: 15px;
+}
+#contact_form input,
+#contact_form textarea{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+ #contact_form input[type="submit"] {
+background: skyblue;
+border: none;
+padding: 10px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
+}
 
 /* change document content */
 #change_document .content .column {
