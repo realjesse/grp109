@@ -3,7 +3,7 @@ document.getElementById('reservation_form').addEventListener('submit', function(
   // initialize form data
   const first_name = document.getElementById('fname').value;
   const last_name = document.getElementById('lname').value;
-  const email = document.getElementById('phone').value;
+  const email = document.getElementById('email').value;
   const phone_number = document.getElementById('phone').value;
   const date_time = document.getElementById('date-time').value;
   const num_of_people = document.getElementById('num_of_people').value;
