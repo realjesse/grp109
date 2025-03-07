@@ -9,6 +9,7 @@ document.getElementById('contact_form').addEventListener('submit', function(even
   var email = document.getElementById('email').value;
   var comment = document.getElementById('comment').value;
   let content = document.querySelector('.content')
+  let form = document.querySelector('form');
 
 // Validate Name 
   if (name.length <5){
@@ -37,8 +38,10 @@ document.getElementById('contact_form').addEventListener('submit', function(even
     alert (errorMessages);
   } else {
     // If all the data is valid
-    const success_message = document.createElement("p");
+    // Remove form from DOM, add thank you text
+    const success_message = document.createElement("h2");
     success_message.textContent = "Thank you for contacting us!";
+    content.removeChild(form);
     content.appendChild(success_message);
   }
 });
