@@ -1,4 +1,6 @@
 document.getElementById('contact_form').addEventListener('submit', function(event) {
+  // Prevent default, so page doesn't reload, we still want to manpulate DOM.
+  event.preventDefault();
   var isValid = true;
   var errorMessages = '';
   // Get Values 
@@ -6,6 +8,7 @@ document.getElementById('contact_form').addEventListener('submit', function(even
   var phone = document.getElementById('phone').value;
   var email = document.getElementById('email').value;
   var comment = document.getElementById('comment').value;
+  let content = document.querySelector('.content')
 
 // Validate Name 
   if (name.length <5){
@@ -32,7 +35,11 @@ document.getElementById('contact_form').addEventListener('submit', function(even
   // if invalid 
   if (!isValid){
     alert (errorMessages);
-    event.preventDefault();
+  } else {
+    // If all the data is valid
+    const success_message = document.createElement("p");
+    success_message.textContent = "Thank you for contacting us!";
+    content.appendChild(success_message);
   }
 });
                
