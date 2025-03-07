@@ -8,17 +8,17 @@ document.getElementById('contact_form').addEventListener('submit', function(even
   var comment = document.getElementById('comment').value;
 
 // Validate Name 
-if (name.length <5){
-  errorMessages += 'Name must be 5 characters long.\n';
-  isValid = false;
-}
+  if (name.length <5){
+    errorMessages += 'Name must be 5 characters long.\n';
+    isValid = false;
+  }
   // Validate Phone (10 digits)
   var phonePattern = /^[0-9]{10}$/; 
   if (!phonePattern.test(phone)){
     errorMessages += 'Phone must be 10 digits.\n';
     isValid = false;
   }
-// Validate Email 
+  // Validate Email 
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)){
     errorMessages += 'Enter a valid email address.\n';
