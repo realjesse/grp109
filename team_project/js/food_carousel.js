@@ -16,10 +16,12 @@ let index = 0;
 left_carousel_div.addEventListener("click", moveCarouselForward);
 right_carousel_div.addEventListener("click", moveCarouselBackward);
 
+// Updates the image on the DOM
 function updateImage() {
     food_carousel_image.src = image_source_array[index];
 }
 
+// Moves the index forward by one, or loops
 function moveCarouselForward() {
     // Check to see if at end of index
     if (index === image_source_array.length - 1) {
@@ -31,6 +33,7 @@ function moveCarouselForward() {
     updateImage();
 }
 
+// Moves the index back by one, or loops
 function moveCarouselBackward() {
     if (index === 0) {
         index = image_source_array.length - 1;
