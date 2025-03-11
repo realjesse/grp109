@@ -35,6 +35,7 @@ function moveCarouselForward() {
     else {
         index++;
     }
+    resetInterval();
     updateImage();
 }
 
@@ -46,6 +47,7 @@ function moveCarouselBackward() {
     else {
         index--;
     }
+    resetInterval();
     updateImage();
 }
 
