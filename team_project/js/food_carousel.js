@@ -15,3 +15,13 @@ let index = 0;
 function updateImage() {
     food_carousel_image.src = image_source_array[index];
 }
+
+function moveCarouselForward() {
+    index++;
+    updateImage();
+}
+
+function moveCarouselBackward() {
+    index--;
+    updateImage();
+}
