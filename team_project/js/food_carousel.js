@@ -14,8 +14,16 @@ let index = 0;
 let interval;
 
 // Event listeners for left and right divs
-left_carousel_div.addEventListener("click", moveCarouselBackward);
-right_carousel_div.addEventListener("click", moveCarouselForward);
+// They will each loop through image array,
+// then play the sound effect.
+left_carousel_div.addEventListener("click", () => {
+    moveCarouselBackward();
+    playSoundEffect("sound/pop-39222.mp3");
+});
+right_carousel_div.addEventListener("click", () => {
+    moveCarouselForward();
+    playSoundEffect("sound/bubble-pop-293342.mp3");
+});
 
 // Upon loading webpage, updateImage(), and set interval for automatic scrolling
 updateImage();
