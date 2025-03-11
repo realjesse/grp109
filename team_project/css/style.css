@@ -20,6 +20,16 @@ body.index-page{
   background-repeat: no-repeat;
 }
 
+/* Universal link style */
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: darkblue;
+}
+
 /* header */
 
 .header {
@@ -48,6 +58,10 @@ body.index-page{
     text-decoration: none;
     color:black ;
     font-weight: bold;
+}
+
+.header a:hover {
+  color: darkblue;
 }
 
 .header h2 {
