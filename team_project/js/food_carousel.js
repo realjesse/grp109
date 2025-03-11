@@ -9,8 +9,9 @@ const food_carousel_image = document.querySelector(".food_carousel img");
 const left_carousel_div = document.querySelector(".food_carousel .left");
 const right_carousel_div = document.querySelector(".food_carousel .right");
 
-// Create index for images
+// Create index for images, and interval variable
 let index = 0;
+let interval;
 
 // Event listeners for left and right divs
 left_carousel_div.addEventListener("click", moveCarouselForward);
@@ -18,7 +19,7 @@ right_carousel_div.addEventListener("click", moveCarouselBackward);
 
 // Upon loading webpage, updateImage(), and set interval for automatic scrolling
 updateImage();
-setInterval(moveCarouselForward, 4000);
+resetInterval();
 
 // Updates the image on the DOM
 function updateImage() {
@@ -46,4 +47,10 @@ function moveCarouselBackward() {
         index--;
     }
     updateImage();
+}
+
+// Resets interval time to 0
+function resetInterval() {
+    clearInterval(interval);
+    interval = setInterval(moveCarouselForward, 4000);
 }
