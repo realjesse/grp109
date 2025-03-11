@@ -71,6 +71,43 @@ body.index-page{
   
 }
 
+/* Index page */
+.food_carousel {
+  height: 400px;
+  width: 800px;
+}
+
+.food_carousel .image_container {
+  position: relative;
+  width: 800px;
+  height: 350px;
+}
+
+.food_carousel img {
+  width: 800px;
+  height: 350px;
+}
+
+.food_carousel .left,
+.food_carousel .right {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  box-sizing: border-box;
+  display: inline-block;
+  background: grey;
+  top: 0;
+  bottom: 0;
+}
+
+.food_carousel .left {
+  left: 0;
+}
+
+.food_carousel .right {
+  right: 0;
+}
+
 /* Reservation page content */
 #reservation .content{
   display: flex;
