@@ -11,5 +11,5 @@ const food_carousel_image = document.querySelector(".food_carousel img");
 let index = 0
 
 function updateImage() {
-    food_carousel_image.src = image_source_array[i]
+    food_carousel_image.src = image_source_array[index]
 }
