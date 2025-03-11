@@ -16,6 +16,9 @@ let index = 0;
 left_carousel_div.addEventListener("click", moveCarouselForward);
 right_carousel_div.addEventListener("click", moveCarouselBackward);
 
+// Upon loading webpage, updateImage();
+updateImage();
+
 // Updates the image on the DOM
 function updateImage() {
     food_carousel_image.src = image_source_array[index];
