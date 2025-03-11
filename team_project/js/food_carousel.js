@@ -56,3 +56,9 @@ function resetInterval() {
     clearInterval(interval);
     interval = setInterval(moveCarouselForward, 4000);
 }
+
+// Plays the given sound effect
+function playSoundEffect(sound_file_path) {
+    const sound = new Audio(sound_file_path);
+    sound.play();
+}
