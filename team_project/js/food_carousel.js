@@ -12,6 +12,10 @@ const right_carousel_div = document.querySelector(".food_carousel .right");
 // Create index for images
 let index = 0;
 
+// Event listeners for left and right divs
+left_carousel_div.addEventListener("click", moveCarouselForward);
+right_carousel_div.addEventListener("click", moveCarouselBackward);
+
 function updateImage() {
     food_carousel_image.src = image_source_array[index];
 }
