@@ -30,6 +30,10 @@ a:hover {
   color: darkblue;
 }
 
+a:visited {
+  color: darkslateblue;
+}
+
 /* header */
 
 .header {
