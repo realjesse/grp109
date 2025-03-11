@@ -16,8 +16,9 @@ let index = 0;
 left_carousel_div.addEventListener("click", moveCarouselForward);
 right_carousel_div.addEventListener("click", moveCarouselBackward);
 
-// Upon loading webpage, updateImage();
+// Upon loading webpage, updateImage(), and set interval for automatic scrolling
 updateImage();
+setInterval(moveCarouselForward, 4000);
 
 // Updates the image on the DOM
 function updateImage() {
