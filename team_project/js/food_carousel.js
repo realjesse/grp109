@@ -21,11 +21,22 @@ function updateImage() {
 }
 
 function moveCarouselForward() {
-    index++;
+    // Check to see if at end of index
+    if (index === image_source_array.length - 1) {
+        index = 0;
+    }
+    else {
+        index++;
+    }
     updateImage();
 }
 
 function moveCarouselBackward() {
-    index--;
+    if (index === 0) {
+        index = image_source_array.length - 1;
+    }
+    else {
+        index--;
+    }
     updateImage();
 }
