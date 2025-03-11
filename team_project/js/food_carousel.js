@@ -5,5 +5,11 @@ image_source_array = ["images/thomas-marban-EHK-EH1SRzQ-unsplash.jpg", "images/k
 ]
 
 // Get image element
-let food_carousel_image = document.querySelector(".food_carousel img");
+const food_carousel_image = document.querySelector(".food_carousel img");
 
+// Create index for images
+let index = 0
+
+function updateImage() {
+    food_carousel_image.src = image_source_array[i]
+}
