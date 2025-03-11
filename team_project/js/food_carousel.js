@@ -14,8 +14,8 @@ let index = 0;
 let interval;
 
 // Event listeners for left and right divs
-left_carousel_div.addEventListener("click", moveCarouselForward);
-right_carousel_div.addEventListener("click", moveCarouselBackward);
+left_carousel_div.addEventListener("click", moveCarouselBackward);
+right_carousel_div.addEventListener("click", moveCarouselForward);
 
 // Upon loading webpage, updateImage(), and set interval for automatic scrolling
 updateImage();
