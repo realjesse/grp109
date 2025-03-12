@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // List of the names
-    var names = ["Aatiqa", "Jesse"];
+    var names = ["Aatiqa", "Jesse", "Temirlan"];
     var index = 0; 
 
     // Function to update the displayed name
@@ -10,14 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
          setTimeout(updateNames, 2000);
     }
 
-    // This function will display the current month and year.
-    function updateDate() {
-        var now = new Date(); 
-        var formattedDate = (now.getMonth() + 1).toString().padStart(2, '0') + "/" + now.getFullYear();
-        document.getElementById("project-date").textContent = formattedDate; 
-    }
-    // It will start the name and the date
+    // This is for the current date
+     document.getElementById("project-date").textContent = "03/2025";
+    
+    // This will update the names
     updateNames();
-    updateDate(); 
+    
 });
-
