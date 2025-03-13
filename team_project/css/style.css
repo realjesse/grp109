@@ -80,6 +80,14 @@ a:visited {
 
 /* content */
 
+/* Universal column */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
 .content {
     flex: 1;
     display: flex;
