@@ -32,6 +32,10 @@ resetInterval();
 
 function runCarousel() {
 
+    // Increment time elasped
+    timeElapsed++;
+
+    // If it has been 3 seconds, move carousel forward
     if (timeElapsed === 3) {
         moveCarouselForward();
     }
