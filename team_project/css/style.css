@@ -109,10 +109,14 @@ a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
 }
 
 /* Index page */
+
+.index-page .content {
+  gap: 30px;
+}
+
 .food_carousel {
   height: 400px;
   width: 800px;
