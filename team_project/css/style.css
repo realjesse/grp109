@@ -29,10 +29,20 @@ body.index-page{
 
 a {
   color: black;
+  transition: all 0.3s;
 }
 
 a:hover {
   color: darkblue;
+  animation: blink-animation 0.5s step-start infinite;
+  animation-delay: 2s;
+}
+
+/* Causes links to blink */
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
 }
 
 a:visited {
