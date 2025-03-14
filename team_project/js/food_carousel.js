@@ -40,6 +40,8 @@ function runCarousel() {
     if (timeElapsed === 3) {
         moveCarouselForward();
     }
+
+    updateTimer();
 }
 
 // Updates the image on the DOM
@@ -62,6 +64,7 @@ function moveCarouselForward() {
         index++;
     }
     timeElapsed = 0;
+    updateTimer();
     resetInterval();
     updateImage();
 }
@@ -75,6 +78,7 @@ function moveCarouselBackward() {
         index--;
     }
     timeElapsed = 0;
+    updateTimer();
     resetInterval();
     updateImage();
 }
