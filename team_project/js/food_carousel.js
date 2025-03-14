@@ -43,6 +43,7 @@ function runCarousel() {
     if (timeElapsed === 3) {
         moveCarouselForward();
         timeElapsed = 0;
+        resetInterval();
     }
 }
 
@@ -79,7 +80,7 @@ function moveCarouselBackward() {
 // Resets interval time to 0
 function resetInterval() {
     clearInterval(interval);
-    interval = setInterval(moveCarouselForward, 3000);
+    interval = setInterval(runCarousel, 1000);
 }
 
 // Plays the given sound effect
