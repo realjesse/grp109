@@ -263,6 +263,19 @@ border-radius: 5px;
   justify-content: center;
 }
 
+/* Menu page */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.menu-image {
+  width: 400px;
+  height: 600px;
+}
+
 /* footer */
 
 .footer {
