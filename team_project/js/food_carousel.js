@@ -8,6 +8,7 @@ image_source_array = ["images/thomas-marban-EHK-EH1SRzQ-unsplash.jpg", "images/k
 const food_carousel_image = document.querySelector(".food_carousel img");
 const left_carousel_div = document.querySelector(".food_carousel .left");
 const right_carousel_div = document.querySelector(".food_carousel .right");
+const timer_element = document.querySelector(".timer");
 
 // Create index for images, and interval variable, create time elapsed variable
 let index = 0;
@@ -34,10 +35,14 @@ function runCarousel() {
 
     // Increment time elasped
     timeElapsed++;
+    
+    // Update timer text content
+    timer_element.textContent = `${timeElapsed}`;
 
     // If it has been 3 seconds, move carousel forward
     if (timeElapsed === 3) {
         moveCarouselForward();
+        timeElapsed = 0;
     }
 }
 
