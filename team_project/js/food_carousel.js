@@ -4,7 +4,7 @@ image_source_array = ["images/thomas-marban-EHK-EH1SRzQ-unsplash.jpg", "images/k
     "images/mahmoud-fawzy-YnVaHqgpPLA-unsplash.jpg"
 ]
 
-// Get image element, left and right element
+// Get image element, left and right element, and timer element
 const food_carousel_image = document.querySelector(".food_carousel img");
 const left_carousel_div = document.querySelector(".food_carousel .left");
 const right_carousel_div = document.querySelector(".food_carousel .right");
@@ -31,6 +31,8 @@ right_carousel_div.addEventListener("click", () => {
 updateImage();
 resetInterval();
 
+// The main automatically running carousel function.  Works in tandem with
+// the variable interval, to run every second
 function runCarousel() {
 
     // Increment time elasped
@@ -49,8 +51,8 @@ function updateImage() {
     food_carousel_image.src = image_source_array[index];
 }
 
+// Update timer text content
 function updateTimer() {
-    // Update timer text content
     timer_element.textContent = `${timeElapsed}`;
 }
 
@@ -63,6 +65,9 @@ function moveCarouselForward() {
     else {
         index++;
     }
+
+    // Reset time to 0, update timer DOM element, reset the automatically
+    // moving interval time, and update the image on screen
     timeElapsed = 0;
     updateTimer();
     resetInterval();
@@ -77,13 +82,17 @@ function moveCarouselBackward() {
     else {
         index--;
     }
+
+    // Reset time to 0, update timer DOM element, reset the automatically
+    // moving interval time, and update the image on screen
     timeElapsed = 0;
     updateTimer();
     resetInterval();
     updateImage();
 }
 
-// Resets interval time to 0
+// Resets interval time to run runCarousel() every second.  runCarousel()
+// is the main function to control automatic moving of images
 function resetInterval() {
     clearInterval(interval);
     interval = setInterval(runCarousel, 1000);
