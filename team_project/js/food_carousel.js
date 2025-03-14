@@ -28,8 +28,10 @@ right_carousel_div.addEventListener("click", () => {
 });
 
 // Upon loading webpage, updateImage(), and set interval for automatic scrolling
+// Update timer element immediately
 updateImage();
 resetInterval();
+updateTimer();
 
 // The main automatically running carousel function.  Works in tandem with
 // the variable interval, to run every second
