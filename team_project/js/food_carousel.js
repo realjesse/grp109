@@ -9,8 +9,9 @@ const food_carousel_image = document.querySelector(".food_carousel img");
 const left_carousel_div = document.querySelector(".food_carousel .left");
 const right_carousel_div = document.querySelector(".food_carousel .right");
 
-// Create index for images, and interval variable
+// Create index for images, and interval variable, create time elapsed variable
 let index = 0;
+let timeElapsed = 0;
 let interval;
 
 // Event listeners for left and right divs
@@ -25,10 +26,15 @@ right_carousel_div.addEventListener("click", () => {
     playSoundEffect("sound/bubble-pop-293342.mp3");
 });
 
+// Upon loading webpage, updateImage(), and set interval for automatic scrolling
+updateImage();
+resetInterval();
+
 function runCarousel() {
-    // Upon loading webpage, updateImage(), and set interval for automatic scrolling
-    updateImage();
-    resetInterval();
+
+    if (timeElapsed === 3) {
+        moveCarouselForward();
+    }
 }
 
 // Updates the image on the DOM
