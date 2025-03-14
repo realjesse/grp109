@@ -149,6 +149,14 @@ a:visited {
   right: 0;
 }
 
+.info_container {
+  background: grey;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Reservation page content */
 #reservation .content{
   display: flex;
