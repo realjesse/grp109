@@ -40,14 +40,16 @@ function runCarousel() {
     if (timeElapsed === 3) {
         moveCarouselForward();
     }
-
-    // Update timer text content
-    timer_element.textContent = `${timeElapsed}`;
 }
 
 // Updates the image on the DOM
 function updateImage() {
     food_carousel_image.src = image_source_array[index];
+}
+
+function updateTimer() {
+    // Update timer text content
+    timer_element.textContent = `${timeElapsed}`;
 }
 
 // Moves the index forward by one, or loops
