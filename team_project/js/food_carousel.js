@@ -25,9 +25,11 @@ right_carousel_div.addEventListener("click", () => {
     playSoundEffect("sound/bubble-pop-293342.mp3");
 });
 
-// Upon loading webpage, updateImage(), and set interval for automatic scrolling
-updateImage();
-resetInterval();
+function runCarousel() {
+    // Upon loading webpage, updateImage(), and set interval for automatic scrolling
+    updateImage();
+    resetInterval();
+}
 
 // Updates the image on the DOM
 function updateImage() {
