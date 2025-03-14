@@ -125,6 +125,12 @@ a:visited {
   align-items: center;
 }
 
+.timer_container {
+  background: grey;
+  width: 100%;
+  text-align: center;
+}
+
 .food_carousel .image_container {
   position: relative;
   width: 800px;
