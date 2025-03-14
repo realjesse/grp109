@@ -35,16 +35,14 @@ function runCarousel() {
 
     // Increment time elasped
     timeElapsed++;
-    
-    // Update timer text content
-    timer_element.textContent = `${timeElapsed}`;
 
     // If it has been 3 seconds, move carousel forward
     if (timeElapsed === 3) {
         moveCarouselForward();
-        timeElapsed = 0;
-        resetInterval();
     }
+
+    // Update timer text content
+    timer_element.textContent = `${timeElapsed}`;
 }
 
 // Updates the image on the DOM
@@ -61,6 +59,7 @@ function moveCarouselForward() {
     else {
         index++;
     }
+    timeElapsed = 0;
     resetInterval();
     updateImage();
 }
@@ -73,6 +72,7 @@ function moveCarouselBackward() {
     else {
         index--;
     }
+    timeElapsed = 0;
     resetInterval();
     updateImage();
 }
