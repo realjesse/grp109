@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         index = (index + 1) % names.length; 
          setTimeout(updateNames, 2000);
     }
-
-    // This is for the current date
-     document.getElementById("project-date").textContent = "03/2025";
     
     // This will update the names
     updateNames();
