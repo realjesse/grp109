@@ -1,12 +1,17 @@
 document.getElementById('reservation_form').addEventListener('submit', function(event) {
   
   // initialize form data
-  const first_name = document.getElementById('fname').value;
-  const last_name = document.getElementById('lname').value;
-  const email = document.getElementById('email').value;
-  const phone_number = document.getElementById('phone').value;
-  const date_time = document.getElementById('date-time').value;
-  const num_of_people = document.getElementById('num_of_people').value;
+  const first_name_node = document.getElementById('fname');
+  const last_name_node = document.getElementById('lname');
+  const email_node = document.getElementById('email');
+  const phone_number_node = document.getElementById('phone');
+  const date_time_node = document.getElementById('date-time');
+  const num_of_people_node = document.getElementById('num_of_people');
+
+  // Check if form data is valid, using a self-executing anonymous function
+  (function () {
+    
+  })();
   
   // create a constant which will contain new page html
   const reservationSuccessfulPage = `
@@ -47,12 +52,12 @@ document.getElementById('reservation_form').addEventListener('submit', function(
         <div class="content">
           <h1>Reservation successful!</h1>
           
-              <p>Thank you ${first_name} for your reservation. We are excited to serve you</p>
+              <p>Thank you ${first_name_node.value} for your reservation. We are excited to serve you</p>
               <ul>
-                <li>Email: ${email}</li>
-                <li>Phone: ${phone_number}</li>
-                <li>Date and time: ${date_time}</li>
-                <li>Number of people: ${num_of_people}</li>
+                <li>Email: ${email_node.value}</li>
+                <li>Phone: ${phone_number_node.value}</li>
+                <li>Date and time: ${date_time_node.value}</li>
+                <li>Number of people: ${num_of_people_node.value}</li>
               </ul>
               <p>Contact us if you have any questions!</p>
         </div>
