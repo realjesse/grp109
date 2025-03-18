@@ -8,13 +8,67 @@ document.getElementById('reservation_form').addEventListener('submit', function(
   const date_time_node = document.getElementById('date-time');
   const num_of_people_node = document.getElementById('num_of_people');
 
-  // Check if form data is valid, using a self-executing anonymous function
-  (function () {
-    
-  })();
+  let is_valid = true;
+
+
+  // If the first name is empty or null, make border of node red, set is_valid
+  // to false
+  if (first_name_node.value === "" || first_name_node.value === null) {
+    first_name_node.style.borderColor = 'red';
+    is_valid = false;
+    event.preventDefault();
+  }
+  else {
+    first_name_node.style.borderColor = 'rgb(118, 118, 118)';
+  }
+  // If the last name value is empty or null, make border of node red, set
+  // is_valid to false
+  if (last_name_node.value === "" || last_name_node.value === null) {
+    last_name_node.style.borderColor = 'red';
+    is_valid = false;
+    event.preventDefault();
+  }
+  else {
+    last_name_node.style.borderColor = 'rgb(118, 118, 118)';
+  }
+  // If the email value is empty or null, or does not include and @ or . 
+  // symbol, then set node border color to red, and make is_valid false
+  if (email_node.value === "" || email_node.value === null || 
+      !email_node.value.includes("@") || !email_node.value.includes(".")) {
+    email_node.style.borderColor = 'red';
+    is_valid = false;
+    event.preventDefault();
+  }
+  else {
+    email_node.style.borderColor = 'rgb(118, 118, 118)';
+  }
+  // If the phone number value is empty or null or more than 15 chars, then
+  // set border value to red and is_valid to false
+  if (phone_number_node.value === "" || phone_number_node.value === null || 
+      phone_number_node.value.length > 15) {
+    phone_number_node.style.borderColor = 'red';
+    is_valid = false;
+    event.preventDefault();
+  }
+  else {
+    phone_number_node.style.borderColor = 'rgb(118, 118, 118)';
+  }
+  // If the date_time_node is empty or null, set border color to red and 
+  // make is_valid false
+  if (date_time_node.value === "" || date_time_node.value === null) {
+    date_time_node.style.borderColor = 'red';
+    is_valid = false;
+    event.preventDefault();
+  }
+  else {
+    date_time_node.style.borderColor = 'rgb(118, 118, 118)';
+  }
   
-  // create a constant which will contain new page html
-  const reservationSuccessfulPage = `
+  // If is_valid is true, then create a new page that says thank you and
+  // has the info of the user
+  if (is_valid) {
+    // create a constant which will contain new page html
+    const reservationSuccessfulPage = `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -72,29 +126,30 @@ document.getElementById('reservation_form').addEventListener('submit', function(
           <!-- HTML validator link -->
           <div>
             <a href="https://validator.w3.org/check?uri=referer"
-               target="_blank" rel="noopener noreferrer">
-             <img src="https://www.w3.org/Icons/valid-xhtml10" 
-               alt="Valid XHTML 1.0 Strict">
+              target="_blank" rel="noopener noreferrer">
+            <img src="https://www.w3.org/Icons/valid-xhtml10" 
+              alt="Valid XHTML 1.0 Strict">
             </a>
           </div>
         
           <!-- CSS Validator link -->
           <div>
-             <a href="https://jigsaw.w3.org/css-validator/check/referer" 
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" 
                 target="_blank" rel="noopener noreferrer">
-             <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-               alt="Valid CSS!">
-             </a>
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+              alt="Valid CSS!">
+            </a>
           </div>
         </div>
     </body>
     </html>
     `;
-  
+
     // This will open a new page, with info loaded
     const newWindow = window.open();
     newWindow.document.write(reservationSuccessfulPage);
     newWindow.document.close();
     newWindow.document.body.style.zoom = "100%"; // Browser automatically zooms in at 200%
+  }
 });
                                    
