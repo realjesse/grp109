@@ -10,10 +10,10 @@ body {
     display: flex;
     flex-direction: column;
     color: black;
-    
-    
+    font-size: 1em;
 }
-body.index-page{
+
+body.index-page {
   background: url('https://www.caterboss.ie/site/uploads/sys_articles/sushi-types.png');
   background-size: cover;
   background-position: center;
