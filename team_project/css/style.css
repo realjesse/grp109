@@ -49,6 +49,11 @@ a:visited {
   color: darkslateblue;
 }
 
+/* Text centering class */
+.text_center {
+  text-align: center;
+}
+
 /* header */
 
 .header {
